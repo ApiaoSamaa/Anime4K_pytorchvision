@@ -147,33 +147,3 @@ for t in range(epochs):
 
 print("Time end for training.")
 
-# %%
-
-def decorator(fn):
-    print("decorator")
-    def _fn():
-        print("other")
-        # fn()
-    return _fn
-
-@decorator
-def test():
-    print("test")
-
-test()
-# %%
-
-def decorator(fn):
-    print("decorator")
-    def _fn():
-        print("other")
-        # fn()
-    return _fn
-
-def test():
-    print("test")
-
-test = decorator(test)
-
-test()
-# %%
